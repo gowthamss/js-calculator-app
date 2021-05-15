@@ -65,7 +65,9 @@ body {
     border: none;
     width: 100%;
     text-align: right;
-    color: red; }
+    color: white;
+    font-size: 48px;
+    font-weight: bold; }
 
 .container .section3 {
   padding: 1.5rem;

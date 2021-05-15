@@ -81,7 +81,9 @@ body {
             border: none;
             width: 100%;
             text-align: right;
-            color: red;
+            color: $theme1-primary-text-color;
+            font-size: $input-number-size;
+            font-weight: bold;
         }
     }
     & .section3 {
