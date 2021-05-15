@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css//style.css">
+
+    <title>Calculator app</title>
+</head>
+
+<body>
+
+    <main class="container">
+        <!-- Title and Theme section -->
+        <section class="section1">
+            <h2 class="title">
+                calc
+            </h2>
+            <div class="theme-selector">
+                <p class="theme-label">
+                    THEME
+                </p>
+                <div class="theme-changer">
+                    <div class="theme-slide-level">
+                        <label class="slide-number" for="theme1-radio">1</label>
+                        <label class="slide-number" for="theme2-radio">2</label>
+                        <label class="slide-number" for="theme3-radio">3</label>
+                    </div>
+                    <div class="theme-slider">
+                        <div class="radio-container">
+                            <input type="radio" name="theme-radio" id="theme1-radio" checked="checked">
+                            <span class="checkmark"></span>
+                        </div>
+                        <div class="radio-container">
+                            <input type="radio" name="theme-radio" id="theme2-radio">
+                            <span class="checkmark"></span>
+                        </div>
+                        <div class="radio-container">
+                            <input type="radio" name="theme-radio" id="theme3-radio">
+                            <span class="checkmark"></span>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Input Screen section -->
+        <section class="section2">
+            <input class="screen" type="number" name="calcInput" id="calcInput" readonly>
+        </section>
+
+        <!-- Keypad section -->
+        <section class="section3">
+            <!-- <div class="row1"> -->
+            <p class="calc-button number-btn">7</p>
+            <p class="calc-button number-btn">8</p>
+            <p class="calc-button number-btn">9</p>
+            <p class="calc-button action-btn del-btn">DEL</p>
+            <!-- </div> -->
+            <!-- <div class="row2"> -->
+            <p class="calc-button number-btn">4</p>
+            <p class="calc-button number-btn">5</p>
+            <p class="calc-button number-btn">6</p>
+            <p class="calc-button number-btn">+</p>
+            <!-- </div> -->
+            <!-- <div class="row3"> -->
+            <p class="calc-button number-btn">1</p>
+            <p class="calc-button number-btn">2</p>
+            <p class="calc-button number-btn">3</p>
+            <p class="calc-button number-btn">-</p>
+            <!-- </div> -->
+            <!-- <div class="row4"> -->
+            <p class="calc-button number-btn">.</p>
+            <p class="calc-button number-btn">0</p>
+            <p class="calc-button number-btn">/</p>
+            <p class="calc-button number-btn">*</p>
+            <!-- </div> -->
+            <!-- <div class="row5"> -->
+            <p class="calc-button action-btn reset-btn">RESET</p>
+            <p class="calc-button sum-btn">=</p>
+            <!-- </div> -->
+        </section>
+    </main>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="#">Gowtham</a>.
+    </div>
+</body>
+
+</html>
