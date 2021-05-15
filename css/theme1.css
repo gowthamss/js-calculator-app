@@ -41,9 +41,10 @@ body {
           height: 20px; }
           .container .section1 .theme-selector .theme-changer .theme-slider .radio-container input {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            opacity: 0; }
+            opacity: 0;
+            height: 20px;
+            width: 20px;
+            z-index: 1; }
           .container .section1 .theme-selector .theme-changer .theme-slider .radio-container .checkmark {
             position: absolute;
             top: 0;
