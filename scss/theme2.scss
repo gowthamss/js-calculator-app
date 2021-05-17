@@ -71,18 +71,7 @@ body {
         }
     }
     & .section2 {
-        margin-bottom: 2rem;
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-around;
-        flex-direction: column;
-        min-height: 6rem;
         background: $theme2-screen-background;
-        border-radius: 8px;
-        outline: none;
-        border: none;
-        width: 100%;
-        padding-right: 1rem;
         & .current-operand {
             // text-align: right;
             color: $theme2-secondary-text-color;

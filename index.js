@@ -29,7 +29,9 @@ class Calculator {
 
     appendNumber(number) {
         if (number === '.' && this.currentOperand.includes('.')) return
-        this.currentOperand += number
+        if (this.currentOperand.length <= 10) {
+            this.currentOperand += number
+        }
     }
 
     chooseOperation(operation) {

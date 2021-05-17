@@ -28,6 +28,22 @@ body {
     outline: none;
 }
 
+.section2 {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    min-height: 6rem;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 0 0.75rem;
+    height: auto;
+    word-break: break-all;
+}
+
 @media (min-width: $mobile) and (max-width: $tablet) {
     body {
         @include common-flex();

@@ -57,18 +57,7 @@ body {
             background: #93261a; }
 
 .container .section2 {
-  margin-bottom: 2rem;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  flex-direction: column;
-  min-height: 6rem;
-  background: #182034;
-  border-radius: 8px;
-  outline: none;
-  border: none;
-  width: 100%;
-  padding-right: 1rem; }
+  background: #182034; }
   .container .section2 .current-operand {
     color: white;
     font-size: 32px;
@@ -132,6 +121,21 @@ body {
   cursor: pointer;
   border: none !important;
   outline: none; }
+
+.section2 {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  min-height: 6rem;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 0 0.75rem;
+  height: auto;
+  word-break: break-all; }
 
 @media (min-width: 375px) and (max-width: 662px) {
   body {
