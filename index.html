@@ -8,7 +8,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/theme1.css">
+    <link rel="stylesheet" href="#">
 
     <title>Calculator app</title>
 </head>
@@ -33,8 +33,7 @@
                     </div>
                     <div class="theme-slider">
                         <div class="radio-container">
-                            <input type="radio" name="theme-radio" class="theme-radio" id="theme1-radio" value="1"
-                                checked="checked">
+                            <input type="radio" name="theme-radio" class="theme-radio" id="theme1-radio" value="1">
                             <span class="checkmark"></span>
                         </div>
                         <div class="radio-container">
@@ -54,38 +53,41 @@
 
         <!-- Input Screen section -->
         <section class="section2">
-            <input class="screen" type="number" name="calcInput" id="calcInput" value="0" readonly>
+            <div data-previous-operand class="previous-operand"></div>
+            <!-- <div data-current-operand class="previous-operand">123</div> -->
+            <!-- <input data-curreent-operand class="screen" type="text" name="calcInput" id="calcInput" value="0" readonly maxlength="10" max="999999999"> -->
+            <div class="current-operand" data-current-operand>0</div>
         </section>
 
         <!-- Keypad section -->
-        <section class="section3">
+        <section class="section3 key-container">
             <!-- <div class="row1"> -->
-            <p class="calc-button number-btn">7</p>
-            <p class="calc-button number-btn">8</p>
-            <p class="calc-button number-btn">9</p>
-            <p class="calc-button action-btn del-btn">DEL</p>
+            <button class="calc-button main-btn" data-number>7</button>
+            <button class="calc-button main-btn" data-number>8</button>
+            <button class="calc-button main-btn" data-number>9</button>
+            <button class="calc-button action-btn" data-delete>DEL</button>
             <!-- </div> -->
             <!-- <div class="row2"> -->
-            <p class="calc-button number-btn">4</p>
-            <p class="calc-button number-btn">5</p>
-            <p class="calc-button number-btn">6</p>
-            <p class="calc-button number-btn">+</p>
+            <button class="calc-button main-btn" data-number>4</button>
+            <button class="calc-button main-btn" data-number>5</button>
+            <button class="calc-button main-btn" data-number>6</button>
+            <button class="calc-button main-btn" data-operator>+</button>
             <!-- </div> -->
             <!-- <div class="row3"> -->
-            <p class="calc-button number-btn">1</p>
-            <p class="calc-button number-btn">2</p>
-            <p class="calc-button number-btn">3</p>
-            <p class="calc-button number-btn">-</p>
+            <button class="calc-button main-btn" data-number>1</button>
+            <button class="calc-button main-btn" data-number>2</button>
+            <button class="calc-button main-btn" data-number>3</button>
+            <button class="calc-button main-btn" data-operator>-</button>
             <!-- </div> -->
             <!-- <div class="row4"> -->
-            <p class="calc-button number-btn">.</p>
-            <p class="calc-button number-btn">0</p>
-            <p class="calc-button number-btn">/</p>
-            <p class="calc-button number-btn">*</p>
+            <button class="calc-button main-btn" data-number>.</button>
+            <button class="calc-button main-btn" data-number>0</button>
+            <button class="calc-button main-btn" data-operator>/</button>
+            <button class="calc-button main-btn" data-operator>*</button>
             <!-- </div> -->
             <!-- <div class="row5"> -->
-            <p class="calc-button action-btn reset-btn">RESET</p>
-            <p class="calc-button sum-btn">=</p>
+            <button class="calc-button action-btn reset-btn" data-reset>RESET</button>
+            <button class="calc-button sum-btn" data-equals>=</button>
             <!-- </div> -->
         </section>
     </main>

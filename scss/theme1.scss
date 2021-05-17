@@ -62,7 +62,7 @@ body {
                             width: 20px;
                             border-radius: 50%;
                         }
-                        & input:checked ~ .checkmark {
+                        & input:checked~.checkmark {
                             background: $theme1-toggle-color;
                         }
                     }
@@ -72,17 +72,28 @@ body {
     }
     & .section2 {
         margin-bottom: 2rem;
-        input.screen {
-            height: 6rem;
-            background: $theme1-screen-background;
-            border-radius: 8px;
-            outline: none;
-            border: none;
-            width: 100%;
-            text-align: right;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        flex-direction: column;
+        min-height: 6rem;
+        background: $theme1-screen-background;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        width: 100%;
+        padding-right: 1rem;
+        & .current-operand {
+            // text-align: right;
             color: $theme1-primary-text-color;
-            font-size: $input-number-size;
+            font-size: $button-number-size;
             font-weight: bold;
+            // padding: 1.25rem;
+        }
+        & .previous-operand {
+            color: rgb(138, 137, 137);
+            font-size: 15px;
+            font-weight: normal;
         }
     }
     & .section3 {
@@ -94,6 +105,8 @@ body {
         grid-auto-rows: 3.5rem;
         grid-column-gap: 0.75rem;
         grid-row-gap: 1rem;
+        justify-content: center;
+        align-content: center;
         & .reset-btn {
             grid-column: span 2;
         }
@@ -102,14 +115,14 @@ body {
         }
         & .calc-button {
             border-radius: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
             &:active {
                 box-shadow: none;
             }
         }
-        & .number-btn {
+        & .main-btn {
             background: $theme1-key-background-secondary;
             box-shadow: 0px 4px 0px $theme1-key-shadow-secondary;
             color: $theme1-secondary-text-color;
@@ -119,6 +132,8 @@ body {
             background: $theme1-key-background-primary;
             box-shadow: 0px 4px 0px $theme1-key-shadow-primary;
             color: $theme1-primary-text-color;
+            font-size: 15px;
+            font-weight: bold;
         }
         & .sum-btn {
             background: $theme1-key-background-teritary;

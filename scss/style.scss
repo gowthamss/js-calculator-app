@@ -22,6 +22,12 @@ body {
     height: 100vh;
 }
 
+.clac-button {
+    cursor: pointer;
+    border: none !important;
+    outline: none;
+}
+
 @media (min-width: $mobile) and (max-width: $tablet) {
     body {
         @include common-flex();
